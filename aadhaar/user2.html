@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Update</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aadhaar Update Service</h1>
+        <img src="aadhaar_logo.png" alt="Aadhaar Logo" class="aadhaar-logo">
+    </header>
+    <main>
+        <h2>Select Update Option</h2>
+        <form id="updateForm">
+            <label for="updateOption">What do you want to update?</label>
+            <select id="updateOption" name="updateOption" required>
+                <option value="">--Select an option--</option>
+                <option value="name">Name</option>
+                <option value="aadhaarNumber">Aadhaar Number</option>
+                <option value="phone">Phone Number</option>
+                <option value="address">Address</option>
+                <option value="photo">Photo</option>
+                <option value="fingerprint">Fingerprint</option>
+            </select>
+
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="ticketInfo" class="hidden"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Unique Identification Authority of India</p>
+    </footer>
+</body>
+</html>
